@@ -99,7 +99,6 @@ class WCNFFormula(object):
         return formula13
 
     def to_13wpm_hard(self, formula13, llista):
-        print(llista)
         for c in llista:
             literals = len(c)
             if literals < 3:
@@ -110,7 +109,6 @@ class WCNFFormula(object):
             else:  # > 3
                 formula13.new_var()
                 new_clause = c[:2] + [formula13.num_vars]
-                print(new_clause)
                 formula13.add_clause(new_clause, TOP_WEIGHT)
 
                 self.to_13wpm_hard(formula13, [[-formula13.num_vars] + c[2:]])
