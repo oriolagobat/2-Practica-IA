@@ -1,0 +1,45 @@
+Que tenim en la classe?
+	
+	Atributs:
+
+		num_vars:
+			Nombre de variables
+		
+		hard:
+			Llista on s'afegiràn les clàusules hard, on totes hauràn de tenir longitud tres
+			Format - [literal]		
+		
+		soft:
+			Llista on s'afegiràn les clàusules soft, on totes hauràn de tenir longitud 1
+			Format - (pes, [literal])
+
+
+		sum_soft_weights:
+			Suma de tots els pesos de les soft
+
+		header:
+			No sé que és
+
+
+	Mètodes:
+
+		num_clauses:
+			Retorna el nombre total de clàusules del problema
+
+		top_weight:
+			Retorna la suma de tots els pesos més 1, el pes de l'infinit
+
+		clean:
+			Nada que me importe
+
+		add_clauses(clàusules, pes=TOP_WEIGHT):
+			Afegeix les clàusules cridant a add_clause(literal, weight)
+
+		add_clause(literals, pes):
+			Afegeix clàusula
+
+		sum_soft_weight:
+			Retorna la suma dels pesos de les soft
+
+
+		

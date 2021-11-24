@@ -135,10 +135,9 @@ class Graph(object):
             formula.add_clause([n], weight=1)
 
         # Hard clauses
-        added = []
         for v1, v2 in itertools.product(range(1, self.n_nodes + 1), range(1, self.n_nodes + 1)):
-            if (v1, v2) not in self.edges and (v2, v1) not in self.edges and v1 != v2 and (v2, v1) not in added:
-                added += [(v1, v2)]
+            if (v1, v2) not in self.edges and (v2,
+                                               v1) not in self.edges and v1 < v2:  # Només voldre carregare aquells que tinguin la primera coordenada menor que la segona
                 formula.add_clause([-v1, -v2], weight=wcnf.TOP_WEIGHT)
         # Solve formula
         print("MAX_CLIQUE", file=sys.stderr)
@@ -146,8 +145,6 @@ class Graph(object):
         opt, model = solver.solve(formula)
 
         # Translate model
-        # return [abs(n) for n in model if
-        #         n < 0]  # Aquí he canviat això per == 0, ja que ara ens retorna les no satisfatibles
         return [n for n in model if n > 0]
 
     def max_cut(self, solver):
@@ -156,7 +153,25 @@ class Graph(object):
         :param solver: An instance of MaxSATRunner.
         :return: A solution (list of nodes).
         """
-        raise NotImplementedError("Your Code Here")
+        # Instantiate the formula
+        formula = wcnf.WCNFFormula()
+        # Create variables
+        nodes = [formula.new_var() for _ in range(self.n_nodes)]
+        # Soft clauses
+        for e1, e2 in self.edges:
+            v1, v2 = nodes[e1 - 1], nodes[e2 - 1]
+            formula.add_clause([v1, v2], weight=1)
+            formula.add_clause([-v1, -v2], weight=1)
+
+        # No hard clauses
+
+        # Solve formula
+        print("MAX_CUT", file=sys.stderr)
+        print(formula, end="\n\n", file=sys.stderr)
+        opt, model = solver.solve(formula)
+
+        # Translate model
+        return [n for n in model if n > 0]
 
 
 # Program main

@@ -87,8 +87,33 @@ class WCNFFormula(object):
         """Generates a new formula that is the 1,3-WPM equivalent
         of this one."""
         formula13 = WCNFFormula()
-        raise NotImplementedError("Your code here")  # Transformar a 1 3 wcnf amb els atributs de la classe
+
+        for _ in range(self.num_vars):
+            formula13.new_var()
+        # Soft
+
+        #
+
+        # Hard
+        self.to_13wpm_hard(formula13, self.hard)
         return formula13
+
+    def to_13wpm_hard(self, formula13, llista):
+        print(llista)
+        for c in llista:
+            literals = len(c)
+            if literals < 3:
+                new_clause = c + [c[1]] if literals == 2 else c * 3
+                formula13.add_clause(new_clause, TOP_WEIGHT)
+            elif literals == 3:
+                formula13.add_clause(c, TOP_WEIGHT)
+            else:  # > 3
+                formula13.new_var()
+                new_clause = c[:2] + [formula13.num_vars]
+                print(new_clause)
+                formula13.add_clause(new_clause, TOP_WEIGHT)
+
+                self.to_13wpm_hard(formula13, [[-formula13.num_vars] + c[2:]])
 
     def sum_soft_weights(self):
         return self._sum_soft_weights
