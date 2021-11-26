@@ -1,0 +1,1976 @@
+# optimum: 72
+p spu 442
+n firefox
+n chromium-browser
+n thunderbird
+n libreoffice-base-core
+n libreoffice-calc
+n libreoffice-common
+n libreoffice-core
+n libreoffice-dev
+n libreoffice-dev-common
+n gcc
+n libxcb-shm0
+n libx11-6
+n libgtk-3-0
+n lsb-release
+n libxi6
+n libxext6
+n libgcc1
+n libpango-1.0-0
+n libdbus-glib-1-2
+n libxcomposite1
+n libxcursor1
+n libxt6
+n libgdk-pixbuf2.0-0
+n libfontconfig1
+n libpangoft2-1.0-0
+n libc6
+n libcairo-gobject2
+n libdbus-1-3
+n libxcb1
+n libxfixes3
+n libatk1.0-0
+n libpangocairo-1.0-0
+n libxdamage1
+n libglib2.0-0
+n libx11-xcb1
+n libstartup-notification0
+n libxrender1
+n libfreetype6
+n libcairo2
+n dpkg
+n chromium-browser-inspector
+n ure
+n uno-libs3
+n libwps-0.4-4
+n librevenge-0.0-0
+n libmwaw-0.3-3
+n libetonyek-0.1-1
+n liborcus-0.13-0
+n libodfgen-0.1-1
+n libxml2
+n lp-solve
+n libicu60
+n libreoffice-style-tango
+n libreoffice-wiki-publisher
+n libxinerama1
+n libhyphen0
+n libclucene-contribs1v5
+n libxslt1.1
+n fontconfig
+n libexpat1
+n libnspr4
+n libeot0
+n libcups2
+n librdf0
+n libmythes-1.2-0
+n libexttextcat-2.0-0
+n libice6
+n libepoxy0
+n libpng16-16
+n libpoppler73
+n libnss3
+n libgpgmepp6
+n libldap-2.4-2
+n libjpeg8
+n fonts-opensymbol
+n libneon27-gnutls
+n libclucene-core1v5
+n libxmlsec1
+n libxrandr2
+n libhunspell-1.6-0
+n liblcms2-2
+n libboost-locale1.65.1
+n libdconf1
+n libxmlsec1-nss
+n libcmis-0.5-5v5
+n libharfbuzz0b
+n libcurl3-gnutls
+n libharfbuzz-icu0
+n zlib1g
+n libsm6
+n ucpp
+n libreoffice-dev-doc
+n libreoffice
+n cpp
+n gcc-7
+n gcc-doc
+n libx11-data
+n libjson-glib-1.0-0
+n libwayland-cursor0
+n libcolord2
+n adwaita-icon-theme
+n hicolor-icon-theme
+n librest-0.7-0
+n libatk-bridge2.0-0
+n libxkbcommon0
+n libwayland-client0
+n libgtk-3-common
+n shared-mime-info
+n libwayland-egl1
+n distro-info-data
+n multiarch-support
+n gcc-8-base
+n libthai0
+n libtiff5
+n libgdk-pixbuf2.0-common
+n fontconfig-config
+n libsystemd0
+n libxdmcp6
+n libxau6
+n libatk1.0-data
+n libpcre3
+n libmount1
+n libselinux1
+n libffi6
+n libxcb-util1
+n libxcb-render0
+n libpixman-1-0
+n libzstd1
+n libbz2-1.0
+n liblzma5
+n liblangtag1
+n libboost-system1.65.1
+n libboost-filesystem1.65.1
+n libboost-iostreams1.65.1
+n libcolamd2
+n libreoffice-style-galaxy
+n default-jre
+n java6-runtime
+n libreoffice-java-common
+n libgcrypt20
+n libgnutls30
+n libavahi-common3
+n libavahi-client3
+n libgssapi-krb5-2
+n librasqal3
+n libltdl7
+n libraptor2-0
+n libdb5.3
+n libexttextcat-data
+n libbsd0
+n x11-common
+n libsqlite3-0
+n libgpgme11
+n libgssapi3-heimdal
+n libldap-common
+n libsasl2-2
+n ldap-utils
+n libjpeg-turbo8
+n libboost-thread1.65.1
+n libboost-date-time1.65.1
+n libgraphite2-3
+n libnghttp2-14
+n libnettle6
+n libpsl5
+n librtmp1
+n libidn2-0
+n libreoffice-math
+n libreoffice-impress
+n python3-uno
+n libreoffice-base
+n libreoffice-writer
+n libreoffice-report-builder-bin
+n libreoffice-avmedia-backend-gstreamer
+n libreoffice-draw
+n cpp-7
+n cpp-doc
+n gcc-7-base
+n libgmp10
+n libgcc-7-dev
+n libisl19
+n binutils
+n libmpfr6
+n libcc1-0
+n libmpc3
+n gcc-7-doc
+n libjson-glib-1.0-common
+n libudev1
+n gtk-update-icon-cache
+n adwaita-icon-theme-full
+n ubuntu-mono
+n librsvg2-common
+n libsoup-gnome2.4-1
+n libsoup2.4-1
+n libatspi2.0-0
+n xkb-data
+n dconf-gsettings-backend
+n gsettings-backend
+n libdatrie1
+n libthai-data
+n libjbig0
+n fonts-dejavu-core
+n fonts-liberation
+n ttf-bitstream-vera
+n ucf
+n liblz4-1
+n libpcre3-dev
+n libblkid1
+n liblangtag-common
+n libsuitesparseconfig5
+n default-jre-headless
+n openjdk-11-jre
+n libgpg-error0
+n libtasn1-6
+n libp11-kit0
+n libunistring2
+n libhogweed4
+n libavahi-common-data
+n libkrb5support0
+n libkrb5-3
+n libcom-err2
+n libk5crypto3
+n libuuid1
+n libmhash2
+n libyajl2
+n lsb-base
+n libassuan0
+n gnupg
+n gpg
+n libheimntlm0-heimdal
+n libhcrypto4-heimdal
+n libkrb5-26-heimdal
+n libcomerr2
+n libasn1-8-heimdal
+n libroken18-heimdal
+n libsasl2-modules-db
+n openldap-utils
+n ldap-client
+n python3.6
+n libpython3.6
+n python3
+n libreoffice-base-drivers
+n libe-book-0.1-1
+n libabw-0.1-1
+n libepubgen-0.1-1
+n libwpd-0.10-10
+n libwpg-0.3-3
+n libgstreamer-plugins-base1.0-0
+n libgstreamer1.0-0
+n libvisio-0.1-1
+n libfreehand-0.1-1
+n libpagemaker-0.0-0
+n libmspub-0.1-1
+n libcdr-0.1-1
+n cpp-7-doc
+n libcilkrts5
+n libitm1
+n libquadmath0
+n libgomp1
+n libatomic1
+n libmpx2
+n libtsan0
+n libasan4
+n liblsan0
+n libubsan0
+n binutils-x86-64-linux-gnu
+n libbinutils
+n binutils-common
+n binutils-multiarch
+n binutils-mingw-w64-i686
+n binutils-mingw-w64-x86-64
+n install-info
+n humanity-icon-theme
+n librsvg2-2
+n glib-networking
+n dconf-service
+n sensible-utils
+n coreutils
+n debconf
+n libpcrecpp0v5
+n libpcre16-3
+n libc6-dev
+n libpcre32-3
+n openjdk-11-jre-headless
+n java-common
+n libgif7
+n libgl1
+n libkeyutils1
+n dirmngr
+n gnupg-l10n
+n gpgv
+n gnupg-utils
+n gpg-agent
+n gpg-wks-server
+n gpgsm
+n gpg-wks-client
+n gpgconf
+n libreadline7
+n libwind0-heimdal
+n libheimbase1-heimdal
+n libhx509-5-heimdal
+n libpython3.6-stdlib
+n python3.6-minimal
+n mime-support
+n python3-minimal
+n liborc-0.4-0
+n iso-codes
+n libgstreamer-plugins-bad1.0-0
+n libcap2
+n libcap2-bin
+n libcroco3
+n gsettings-desktop-schemas
+n libproxy1v5
+n glib-networking-common
+n glib-networking-services
+n libacl1
+n libattr1
+n perl-base
+n dialog
+n cdebconf
+n menu
+n apt
+n debconf-utils
+n whiptail
+n libc-dev-bin
+n linux-libc-dev
+n ca-certificates-java
+n libxtst6
+n util-linux
+n libpcsclite1
+n libasound2
+n openjdk-11-jdk-headless
+n libglvnd0
+n libglx0
+n adduser
+n libksba8
+n libnpth0
+n pinentry
+n pinentry-curses
+n readline-common
+n libtinfo5
+n libmpdec2
+n libncursesw5
+n libpython3.6-minimal
+n binfmt-support
+n acl
+n attr
+n doc-base
+n safe-rm
+n mono-gac
+n update-inetd
+n debianutils
+n libslang2
+n libdebian-installer4
+n libtextwrap1
+n libnewt0.52
+n gpgv1
+n gpgv2
+n libseccomp2
+n libapt-pkg5.0
+n ubuntu-keyring
+n libpopt0
+n linux-kernel-headers
+n java8-runtime-headless
+n ca-certificates
+n libpam0g
+n libsmartcols1
+n libaudit1
+n libasound2-data
+n libglx-mesa0
+n passwd
+n debconf-2.0
+n libreadline5
+n libssl1.1
+n libpipeline1
+n xfsdump
+n libuuid-perl
+n libyaml-tiny-perl
+n mono-4.0-gac
+n libfile-copy-recursive-perl
+n libfile-temp-perl
+n libpopt-dev
+n rpm
+n openssl
+n libaudit-common
+n libcap-ng0
+n libglapi-mesa
+n libxcb-present0
+n libxcb-dri2-0
+n libdrm2
+n libxcb-sync1
+n libxxf86vm1
+n libgl1-mesa-dri
+n libxcb-glx0
+n libxshmfence1
+n libxcb-dri3-0
+n libsemanage1
+n libpam-modules
+n libncurses5
+n xfsprogs
+n perlapi-5.26.0
+n perl
+n libmono-corlib4.5-cil
+n libmono-security4.0-cil
+n libc-dev
+n debugedit
+n librpmsign8
+n librpm8
+n libelf1
+n rpm2cpio
+n librpmio8
+n librpmbuild8
+n rpm-common
+n libdrm-common
+n libdrm-intel1
+n libllvm8
+n libdrm-amdgpu1
+n libdrm-radeon1
+n libdrm-nouveau2
+n libsensors4
+n libsepol1
+n libsemanage-common
+n libpam-modules-bin
+n libpam-umask
+n libpam-motd
+n libpam-mkhomedir
+n libjson-pp-perl
+n mono-runtime
+n tzdata
+n libmono-system4.0-cil
+n libdw1
+n liblua5.2-0
+n libarchive13
+n libmagic1
+n libpciaccess0
+n libedit2
+n mono-runtime-sgen
+n libmono-system-xml4.0-cil
+n libmono-system-configuration4.0-cil
+n liblzo2-2
+n libmagic-mgc
+n mono-runtime-common
+n libmono-system-security4.0-cil
+d firefox libxcb-shm0
+d firefox libx11-6
+d firefox libgtk-3-0
+d firefox lsb-release
+d firefox libxi6
+d firefox libxext6
+d firefox libgcc1
+d firefox libpango-1.0-0
+d firefox libdbus-glib-1-2
+d firefox libxcomposite1
+d firefox libxcursor1
+d firefox libxt6
+d firefox libgdk-pixbuf2.0-0
+d firefox libfontconfig1
+d firefox libpangoft2-1.0-0
+d firefox libc6
+d firefox libcairo-gobject2
+d firefox libdbus-1-3
+d firefox libxcb1
+d firefox libxfixes3
+d firefox libatk1.0-0
+d firefox libpangocairo-1.0-0
+d firefox libxdamage1
+d firefox libglib2.0-0
+d firefox libx11-xcb1
+d firefox libstartup-notification0
+d firefox libxrender1
+d firefox libfreetype6
+d firefox libcairo2
+d chromium-browser dpkg
+d thunderbird libxcb-shm0
+d thunderbird libx11-6
+d thunderbird libgtk-3-0
+d thunderbird libxext6
+d thunderbird libgcc1
+d thunderbird libpango-1.0-0
+d thunderbird libdbus-glib-1-2
+d thunderbird libxcomposite1
+d thunderbird libxt6
+d thunderbird libgdk-pixbuf2.0-0
+d thunderbird libfontconfig1
+d thunderbird libc6
+d thunderbird libcairo-gobject2
+d thunderbird libdbus-1-3
+d thunderbird libxcb1
+d thunderbird libxfixes3
+d thunderbird libatk1.0-0
+d thunderbird libpangocairo-1.0-0
+d thunderbird libxdamage1
+d thunderbird libglib2.0-0
+d thunderbird libx11-xcb1
+d thunderbird libstartup-notification0
+d thunderbird libxrender1
+d thunderbird libfreetype6
+d thunderbird libcairo2
+d libreoffice-base-core libc6
+d libreoffice-base-core libgcc1
+d libreoffice-base-core ure
+d libreoffice-base-core uno-libs3
+d libreoffice-base-core libreoffice-core
+d libreoffice-calc libc6
+d libreoffice-calc libwps-0.4-4
+d libreoffice-calc libgcc1
+d libreoffice-calc librevenge-0.0-0
+d libreoffice-calc libmwaw-0.3-3
+d libreoffice-calc libreoffice-base-core
+d libreoffice-calc libetonyek-0.1-1
+d libreoffice-calc liborcus-0.13-0
+d libreoffice-calc ure
+d libreoffice-calc libodfgen-0.1-1
+d libreoffice-calc uno-libs3
+d libreoffice-calc libxml2
+d libreoffice-calc lp-solve
+d libreoffice-calc libreoffice-core
+d libreoffice-calc libicu60
+d libreoffice-common libreoffice-style-tango
+d libreoffice-common ure
+d libreoffice-core libxinerama1
+d libreoffice-core libx11-6
+d libreoffice-core libhyphen0
+d libreoffice-core libclucene-contribs1v5
+d libreoffice-core libxslt1.1
+d libreoffice-core fontconfig
+d libreoffice-core libexpat1
+d libreoffice-core libnspr4
+d libreoffice-core libeot0
+d libreoffice-core libcups2
+d libreoffice-core librdf0
+d libreoffice-core libmythes-1.2-0
+d libreoffice-core libexttextcat-2.0-0
+d libreoffice-core libice6
+d libreoffice-core libxext6
+d libreoffice-core libgcc1
+d libreoffice-core libepoxy0
+d libreoffice-core libpng16-16
+d libreoffice-core libdbus-glib-1-2
+d libreoffice-core libpoppler73
+d libreoffice-core libnss3
+d libreoffice-core uno-libs3
+d libreoffice-core libgpgmepp6
+d libreoffice-core libldap-2.4-2
+d libreoffice-core libfontconfig1
+d libreoffice-core libicu60
+d libreoffice-core libjpeg8
+d libreoffice-core fonts-opensymbol
+d libreoffice-core libc6
+d libreoffice-core libdbus-1-3
+d libreoffice-core libneon27-gnutls
+d libreoffice-core liborcus-0.13-0
+d libreoffice-core libclucene-core1v5
+d libreoffice-core libxmlsec1
+d libreoffice-core libxml2
+d libreoffice-core libreoffice-common
+d libreoffice-core libxrandr2
+d libreoffice-core libhunspell-1.6-0
+d libreoffice-core liblcms2-2
+d libreoffice-core libboost-locale1.65.1
+d libreoffice-core libglib2.0-0
+d libreoffice-core libdconf1
+d libreoffice-core libxmlsec1-nss
+d libreoffice-core librevenge-0.0-0
+d libreoffice-core ure
+d libreoffice-core libcmis-0.5-5v5
+d libreoffice-core libharfbuzz0b
+d libreoffice-core libcurl3-gnutls
+d libreoffice-core libharfbuzz-icu0
+d libreoffice-core libxrender1
+d libreoffice-core zlib1g
+d libreoffice-core libsm6
+d libreoffice-core libfreetype6
+d libreoffice-core libcairo2
+d libreoffice-dev libc6
+d libreoffice-dev libgcc1
+d libreoffice-dev ucpp
+d libreoffice-dev libx11-6
+d libreoffice-dev libreoffice-dev-common
+d libreoffice-dev ure
+d libreoffice-dev uno-libs3
+d libreoffice-dev libreoffice-core
+d libreoffice-dev-common libreoffice-common
+d gcc cpp
+d gcc gcc-7
+d libxcb-shm0 libc6
+d libxcb-shm0 libxcb1
+d libx11-6 libc6
+d libx11-6 libxcb1
+d libx11-6 libx11-data
+d libgtk-3-0 libjson-glib-1.0-0
+d libgtk-3-0 libxinerama1
+d libgtk-3-0 libx11-6
+d libgtk-3-0 libwayland-cursor0
+d libgtk-3-0 libcolord2
+d libgtk-3-0 libcups2
+d libgtk-3-0 libxi6
+d libgtk-3-0 adwaita-icon-theme
+d libgtk-3-0 libxext6
+d libgtk-3-0 libepoxy0
+d libgtk-3-0 libpango-1.0-0
+d libgtk-3-0 libxcomposite1
+d libgtk-3-0 hicolor-icon-theme
+d libgtk-3-0 libxcursor1
+d libgtk-3-0 librest-0.7-0
+d libgtk-3-0 libcairo2
+d libgtk-3-0 libgdk-pixbuf2.0-0
+d libgtk-3-0 libfontconfig1
+d libgtk-3-0 libpangoft2-1.0-0
+d libgtk-3-0 libc6
+d libgtk-3-0 libcairo-gobject2
+d libgtk-3-0 libatk-bridge2.0-0
+d libgtk-3-0 libxfixes3
+d libgtk-3-0 libxkbcommon0
+d libgtk-3-0 libatk1.0-0
+d libgtk-3-0 libwayland-client0
+d libgtk-3-0 libgtk-3-common
+d libgtk-3-0 libpangocairo-1.0-0
+d libgtk-3-0 libxdamage1
+d libgtk-3-0 libglib2.0-0
+d libgtk-3-0 shared-mime-info
+d libgtk-3-0 libxrandr2
+d libgtk-3-0 libwayland-egl1
+d lsb-release distro-info-data
+d libxi6 libc6
+d libxi6 libxext6
+d libxi6 libx11-6
+d libxext6 multiarch-support
+d libgcc1 libc6
+d libgcc1 gcc-8-base
+d libpango-1.0-0 fontconfig
+d libpango-1.0-0 libc6
+d libpango-1.0-0 libthai0
+d libpango-1.0-0 libglib2.0-0
+d libdbus-glib-1-2 libc6
+d libdbus-glib-1-2 libglib2.0-0
+d libdbus-glib-1-2 libdbus-1-3
+d libxcomposite1 libc6
+d libxcomposite1 libx11-6
+d libxcursor1 libc6
+d libxcursor1 libxrender1
+d libxcursor1 libxfixes3
+d libxcursor1 libx11-6
+d libxt6 libc6
+d libxt6 libsm6
+d libxt6 libx11-6
+d libxt6 libice6
+d libgdk-pixbuf2.0-0 libc6
+d libgdk-pixbuf2.0-0 libtiff5
+d libgdk-pixbuf2.0-0 libglib2.0-0
+d libgdk-pixbuf2.0-0 libx11-6
+d libgdk-pixbuf2.0-0 libpng16-16
+d libgdk-pixbuf2.0-0 shared-mime-info
+d libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+d libgdk-pixbuf2.0-0 libjpeg8
+d libfontconfig1 libc6
+d libfontconfig1 libfreetype6
+d libfontconfig1 libexpat1
+d libfontconfig1 fontconfig-config
+d libpangoft2-1.0-0 libc6
+d libpangoft2-1.0-0 libglib2.0-0
+d libpangoft2-1.0-0 libpango-1.0-0
+d libpangoft2-1.0-0 libharfbuzz0b
+d libpangoft2-1.0-0 libfreetype6
+d libpangoft2-1.0-0 libfontconfig1
+d libc6 libgcc1
+d libcairo-gobject2 libcairo2
+d libcairo-gobject2 libglib2.0-0
+d libdbus-1-3 libc6
+d libdbus-1-3 libsystemd0
+d libxcb1 libc6
+d libxcb1 libxdmcp6
+d libxcb1 libxau6
+d libxfixes3 libc6
+d libxfixes3 libx11-6
+d libatk1.0-0 libc6
+d libatk1.0-0 libglib2.0-0
+d libatk1.0-0 libatk1.0-data
+d libpangocairo-1.0-0 libc6
+d libpangocairo-1.0-0 libglib2.0-0
+d libpangocairo-1.0-0 libpango-1.0-0
+d libpangocairo-1.0-0 libfreetype6
+d libpangocairo-1.0-0 libcairo2
+d libpangocairo-1.0-0 libfontconfig1
+d libpangocairo-1.0-0 libpangoft2-1.0-0
+d libxdamage1 libc6
+d libxdamage1 libx11-6
+d libglib2.0-0 libc6
+d libglib2.0-0 libpcre3
+d libglib2.0-0 libmount1
+d libglib2.0-0 libselinux1
+d libglib2.0-0 zlib1g
+d libglib2.0-0 libffi6
+d libx11-xcb1 libc6
+d libstartup-notification0 libc6
+d libstartup-notification0 libx11-xcb1
+d libstartup-notification0 libxcb-util1
+d libstartup-notification0 libxcb1
+d libxrender1 libc6
+d libxrender1 libx11-6
+d libfreetype6 libc6
+d libfreetype6 libpng16-16
+d libfreetype6 zlib1g
+d libcairo2 libc6
+d libcairo2 libxext6
+d libcairo2 libxcb-shm0
+d libcairo2 libxcb-render0
+d libcairo2 libx11-6
+d libcairo2 libpng16-16
+d libcairo2 libxcb1
+d libcairo2 libpixman-1-0
+d libcairo2 libxrender1
+d libcairo2 zlib1g
+d libcairo2 libfreetype6
+d libcairo2 libfontconfig1
+d dpkg libc6
+d dpkg libzstd1
+d dpkg libbz2-1.0
+d dpkg liblzma5
+d dpkg libselinux1
+d dpkg zlib1g
+d ure libc6
+d ure libgcc1
+d ure uno-libs3
+d ure libxml2
+d ure libicu60
+d ure liblangtag1
+d uno-libs3 libc6
+d uno-libs3 libgcc1
+d libwps-0.4-4 libc6
+d libwps-0.4-4 librevenge-0.0-0
+d libwps-0.4-4 libgcc1
+d librevenge-0.0-0 libc6
+d librevenge-0.0-0 libgcc1
+d librevenge-0.0-0 zlib1g
+d libmwaw-0.3-3 libc6
+d libmwaw-0.3-3 librevenge-0.0-0
+d libmwaw-0.3-3 libgcc1
+d libetonyek-0.1-1 libc6
+d libetonyek-0.1-1 libgcc1
+d libetonyek-0.1-1 librevenge-0.0-0
+d libetonyek-0.1-1 zlib1g
+d libetonyek-0.1-1 libxml2
+d libetonyek-0.1-1 liblangtag1
+d liborcus-0.13-0 libc6
+d liborcus-0.13-0 libgcc1
+d liborcus-0.13-0 libboost-system1.65.1
+d liborcus-0.13-0 zlib1g
+d liborcus-0.13-0 libboost-filesystem1.65.1
+d liborcus-0.13-0 libboost-iostreams1.65.1
+d libodfgen-0.1-1 libc6
+d libodfgen-0.1-1 librevenge-0.0-0
+d libodfgen-0.1-1 libgcc1
+d libxml2 libc6
+d libxml2 zlib1g
+d libxml2 liblzma5
+d libxml2 libicu60
+d lp-solve libc6
+d lp-solve libcolamd2
+d libicu60 libc6
+d libicu60 libgcc1
+d libreoffice-style-tango libreoffice-common
+d libreoffice-style-tango libreoffice-style-galaxy
+d libreoffice-wiki-publisher default-jre java6-runtime
+d libreoffice-wiki-publisher libreoffice-core
+d libreoffice-wiki-publisher libreoffice-java-common
+d libxinerama1 multiarch-support
+d libhyphen0 libc6
+d libclucene-contribs1v5 libc6
+d libclucene-contribs1v5 libgcc1
+d libclucene-contribs1v5 libclucene-core1v5
+d libclucene-contribs1v5 zlib1g
+d libxslt1.1 libc6
+d libxslt1.1 libgcrypt20
+d libxslt1.1 libxml2
+d fontconfig dpkg
+d libexpat1 libc6
+d libnspr4 libc6
+d libeot0 libc6
+d libcups2 libc6
+d libcups2 libgnutls30
+d libcups2 libavahi-common3
+d libcups2 libavahi-client3
+d libcups2 libgssapi-krb5-2
+d libcups2 zlib1g
+d librdf0 libc6
+d librdf0 librasqal3
+d librdf0 libltdl7
+d librdf0 libraptor2-0
+d librdf0 libdb5.3
+d libmythes-1.2-0 libc6
+d libmythes-1.2-0 libgcc1
+d libexttextcat-2.0-0 libc6
+d libexttextcat-2.0-0 libexttextcat-data
+d libice6 libc6
+d libice6 libbsd0
+d libice6 x11-common
+d libepoxy0 libc6
+d libpng16-16 libc6
+d libpng16-16 zlib1g
+d libpoppler73 libc6
+d libpoppler73 liblcms2-2
+d libpoppler73 libtiff5
+d libpoppler73 libpng16-16
+d libpoppler73 libjpeg8
+d libpoppler73 libnss3
+d libpoppler73 libnspr4
+d libpoppler73 zlib1g
+d libpoppler73 libfreetype6
+d libpoppler73 libfontconfig1
+d libnss3 libc6
+d libnss3 libnspr4
+d libnss3 libsqlite3-0
+d libgpgmepp6 libc6
+d libgpgmepp6 libgcc1
+d libgpgmepp6 libgpgme11
+d libldap-2.4-2 libc6
+d libldap-2.4-2 libgssapi3-heimdal
+d libldap-2.4-2 libgnutls30
+d libldap-2.4-2 libldap-common
+d libldap-2.4-2 libsasl2-2
+d libjpeg8 libjpeg-turbo8
+d libneon27-gnutls libc6
+d libneon27-gnutls libgnutls30
+d libneon27-gnutls zlib1g
+d libneon27-gnutls libgssapi-krb5-2
+d libneon27-gnutls libxml2
+d libclucene-core1v5 libc6
+d libclucene-core1v5 libgcc1
+d libclucene-core1v5 zlib1g
+d libxmlsec1 libc6
+d libxmlsec1 libxslt1.1
+d libxmlsec1 libxml2
+d libxrandr2 libc6
+d libxrandr2 libxext6
+d libxrandr2 libxrender1
+d libxrandr2 libx11-6
+d libhunspell-1.6-0 libc6
+d libhunspell-1.6-0 libgcc1
+d liblcms2-2 libc6
+d libboost-locale1.65.1 libc6
+d libboost-locale1.65.1 libgcc1
+d libboost-locale1.65.1 libboost-thread1.65.1
+d libboost-locale1.65.1 libboost-system1.65.1
+d libboost-locale1.65.1 libicu60
+d libdconf1 libc6
+d libdconf1 libglib2.0-0
+d libxmlsec1-nss libc6
+d libxmlsec1-nss libxmlsec1
+d libxmlsec1-nss libnss3
+d libxmlsec1-nss libnspr4
+d libxmlsec1-nss libxml2
+d libcmis-0.5-5v5 libc6
+d libcmis-0.5-5v5 libgcc1
+d libcmis-0.5-5v5 libboost-date-time1.65.1
+d libcmis-0.5-5v5 libcurl3-gnutls
+d libcmis-0.5-5v5 libxml2
+d libharfbuzz0b libc6
+d libharfbuzz0b libfreetype6
+d libharfbuzz0b libglib2.0-0
+d libharfbuzz0b libgraphite2-3
+d libcurl3-gnutls libc6
+d libcurl3-gnutls libnghttp2-14
+d libcurl3-gnutls libnettle6
+d libcurl3-gnutls libgnutls30
+d libcurl3-gnutls libpsl5
+d libcurl3-gnutls librtmp1
+d libcurl3-gnutls libidn2-0
+d libcurl3-gnutls libgssapi-krb5-2
+d libcurl3-gnutls zlib1g
+d libcurl3-gnutls libldap-2.4-2
+d libharfbuzz-icu0 libc6
+d libharfbuzz-icu0 libicu60
+d libharfbuzz-icu0 libharfbuzz0b
+d zlib1g libc6
+d libsm6 multiarch-support
+d ucpp libc6
+d libreoffice libreoffice-math
+d libreoffice libreoffice-impress
+d libreoffice python3-uno
+d libreoffice libreoffice-base
+d libreoffice libreoffice-writer
+d libreoffice libreoffice-report-builder-bin
+d libreoffice libreoffice-avmedia-backend-gstreamer
+d libreoffice libreoffice-calc
+d libreoffice libreoffice-core
+d libreoffice libreoffice-draw
+d cpp cpp-7
+d gcc-7 gcc-7-base
+d gcc-7 libc6
+d gcc-7 libgmp10
+d gcc-7 libgcc-7-dev
+d gcc-7 libgcc1
+d gcc-7 libisl19
+d gcc-7 binutils
+d gcc-7 libmpfr6
+d gcc-7 zlib1g
+d gcc-7 libcc1-0
+d gcc-7 libmpc3
+d gcc-7 cpp-7
+d gcc-doc gcc-7-doc
+d libjson-glib-1.0-0 libc6
+d libjson-glib-1.0-0 libglib2.0-0
+d libjson-glib-1.0-0 libjson-glib-1.0-common
+d libwayland-cursor0 libc6
+d libwayland-cursor0 libwayland-client0
+d libcolord2 libc6
+d libcolord2 liblcms2-2
+d libcolord2 libglib2.0-0
+d libcolord2 libudev1
+d adwaita-icon-theme gtk-update-icon-cache
+d adwaita-icon-theme hicolor-icon-theme
+d adwaita-icon-theme adwaita-icon-theme-full ubuntu-mono
+d adwaita-icon-theme librsvg2-common
+d librest-0.7-0 libc6
+d librest-0.7-0 libglib2.0-0
+d librest-0.7-0 libsoup-gnome2.4-1
+d librest-0.7-0 libsoup2.4-1
+d librest-0.7-0 libxml2
+d libatk-bridge2.0-0 libc6
+d libatk-bridge2.0-0 libglib2.0-0
+d libatk-bridge2.0-0 libdbus-1-3
+d libatk-bridge2.0-0 libatspi2.0-0
+d libatk-bridge2.0-0 libatk1.0-0
+d libxkbcommon0 libc6
+d libxkbcommon0 xkb-data
+d libwayland-client0 libc6
+d libwayland-client0 libffi6
+d libgtk-3-common dconf-gsettings-backend gsettings-backend
+d shared-mime-info libc6
+d shared-mime-info libglib2.0-0
+d shared-mime-info libxml2
+d libwayland-egl1 libc6
+d multiarch-support libc6
+d libthai0 libc6
+d libthai0 libdatrie1
+d libthai0 libthai-data
+d libtiff5 libc6
+d libtiff5 liblzma5
+d libtiff5 libjpeg8
+d libtiff5 zlib1g
+d libtiff5 libjbig0
+d fontconfig-config fonts-dejavu-core fonts-liberation ttf-bitstream-vera
+d fontconfig-config ucf
+d libsystemd0 libc6
+d libsystemd0 libgcrypt20
+d libsystemd0 liblzma5
+d libsystemd0 liblz4-1
+d libxdmcp6 libc6
+d libxdmcp6 libbsd0
+d libxau6 multiarch-support
+d libpcre3 libc6
+d libmount1 libblkid1
+d libmount1 libc6
+d libmount1 libselinux1
+d libselinux1 libc6
+d libselinux1 libpcre3
+d libffi6 libc6
+d libxcb-util1 libc6
+d libxcb-util1 libxcb1
+d libxcb-render0 libc6
+d libxcb-render0 libxcb1
+d libpixman-1-0 libc6
+d libzstd1 libc6
+d libbz2-1.0 libc6
+d liblzma5 libc6
+d liblangtag1 libc6
+d liblangtag1 liblangtag-common
+d liblangtag1 libxml2
+d libboost-system1.65.1 libc6
+d libboost-filesystem1.65.1 libc6
+d libboost-filesystem1.65.1 libboost-system1.65.1
+d libboost-filesystem1.65.1 libgcc1
+d libboost-iostreams1.65.1 libc6
+d libboost-iostreams1.65.1 libgcc1
+d libboost-iostreams1.65.1 libbz2-1.0
+d libboost-iostreams1.65.1 zlib1g
+d libcolamd2 libc6
+d libcolamd2 libsuitesparseconfig5
+d libreoffice-style-galaxy libreoffice-common
+d default-jre default-jre-headless
+d default-jre openjdk-11-jre
+d libreoffice-java-common libreoffice-common
+d libgcrypt20 libc6
+d libgcrypt20 libgpg-error0
+d libgnutls30 libc6
+d libgnutls30 libgmp10
+d libgnutls30 libtasn1-6
+d libgnutls30 libnettle6
+d libgnutls30 libidn2-0
+d libgnutls30 libp11-kit0
+d libgnutls30 libunistring2
+d libgnutls30 libhogweed4
+d libgnutls30 zlib1g
+d libavahi-common3 libc6
+d libavahi-common3 libavahi-common-data
+d libavahi-client3 libc6
+d libavahi-client3 libavahi-common3
+d libavahi-client3 libdbus-1-3
+d libgssapi-krb5-2 libc6
+d libgssapi-krb5-2 libkrb5support0
+d libgssapi-krb5-2 libkrb5-3
+d libgssapi-krb5-2 libcom-err2
+d libgssapi-krb5-2 libk5crypto3
+d librasqal3 libc6
+d librasqal3 libpcre3
+d librasqal3 libgmp10
+d librasqal3 libraptor2-0
+d librasqal3 libuuid1
+d librasqal3 libmhash2
+d libltdl7 libc6
+d libraptor2-0 libc6
+d libraptor2-0 libxslt1.1
+d libraptor2-0 libcurl3-gnutls
+d libraptor2-0 libxml2
+d libraptor2-0 libyajl2
+d libdb5.3 libc6
+d libbsd0 libc6
+d x11-common lsb-base
+d libsqlite3-0 libc6
+d libgpgme11 libassuan0
+d libgpgme11 gnupg gpg
+d libgpgme11 libc6
+d libgpgme11 libgpg-error0
+d libgssapi3-heimdal libc6
+d libgssapi3-heimdal libheimntlm0-heimdal
+d libgssapi3-heimdal libhcrypto4-heimdal
+d libgssapi3-heimdal libkrb5-26-heimdal
+d libgssapi3-heimdal libcomerr2
+d libgssapi3-heimdal libasn1-8-heimdal
+d libgssapi3-heimdal libroken18-heimdal
+d libsasl2-2 libsasl2-modules-db
+d libsasl2-2 libc6
+d ldap-utils libc6
+d ldap-utils libldap-2.4-2
+d ldap-utils libsasl2-2
+d libjpeg-turbo8 multiarch-support
+d libboost-thread1.65.1 libc6
+d libboost-thread1.65.1 libboost-system1.65.1
+d libboost-thread1.65.1 libgcc1
+d libboost-date-time1.65.1 libc6
+d libboost-date-time1.65.1 libgcc1
+d libgraphite2-3 libc6
+d libnghttp2-14 libc6
+d libnettle6 libc6
+d libpsl5 libc6
+d libpsl5 libidn2-0
+d libpsl5 libunistring2
+d librtmp1 libc6
+d librtmp1 libgmp10
+d librtmp1 libnettle6
+d librtmp1 libgnutls30
+d librtmp1 zlib1g
+d librtmp1 libhogweed4
+d libidn2-0 libc6
+d libidn2-0 libunistring2
+d libreoffice-math fonts-opensymbol
+d libreoffice-math libc6
+d libreoffice-math libgcc1
+d libreoffice-math ure
+d libreoffice-math uno-libs3
+d libreoffice-math libreoffice-core
+d libreoffice-impress libc6
+d libreoffice-impress libgcc1
+d libreoffice-impress librevenge-0.0-0
+d libreoffice-impress libmwaw-0.3-3
+d libreoffice-impress libetonyek-0.1-1
+d libreoffice-impress ure
+d libreoffice-impress libodfgen-0.1-1
+d libreoffice-impress uno-libs3
+d libreoffice-impress libreoffice-core
+d libreoffice-impress libreoffice-draw
+d python3-uno libc6
+d python3-uno libgcc1
+d python3-uno python3.6
+d python3-uno libpython3.6
+d python3-uno ure
+d python3-uno python3
+d python3-uno uno-libs3
+d python3-uno libreoffice-core
+d libreoffice-base libc6
+d libreoffice-base libgcc1
+d libreoffice-base libreoffice-base-core
+d libreoffice-base ure
+d libreoffice-base libreoffice-base-drivers
+d libreoffice-base uno-libs3
+d libreoffice-base libreoffice-core
+d libreoffice-writer libc6
+d libreoffice-writer libwps-0.4-4
+d libreoffice-writer libgcc1
+d libreoffice-writer libe-book-0.1-1
+d libreoffice-writer librevenge-0.0-0
+d libreoffice-writer libmwaw-0.3-3
+d libreoffice-writer libabw-0.1-1
+d libreoffice-writer libreoffice-base-core
+d libreoffice-writer libetonyek-0.1-1
+d libreoffice-writer ure
+d libreoffice-writer libodfgen-0.1-1
+d libreoffice-writer libepubgen-0.1-1
+d libreoffice-writer libwpd-0.10-10
+d libreoffice-writer uno-libs3
+d libreoffice-writer zlib1g
+d libreoffice-writer libxml2
+d libreoffice-writer libreoffice-core
+d libreoffice-writer libwpg-0.3-3
+d libreoffice-writer libicu60
+d libreoffice-report-builder-bin libc6
+d libreoffice-report-builder-bin libgcc1
+d libreoffice-report-builder-bin libreoffice-base
+d libreoffice-report-builder-bin ure
+d libreoffice-report-builder-bin uno-libs3
+d libreoffice-report-builder-bin libreoffice-core
+d libreoffice-avmedia-backend-gstreamer libc6
+d libreoffice-avmedia-backend-gstreamer libgstreamer-plugins-base1.0-0
+d libreoffice-avmedia-backend-gstreamer libgcc1
+d libreoffice-avmedia-backend-gstreamer libglib2.0-0
+d libreoffice-avmedia-backend-gstreamer libgstreamer1.0-0
+d libreoffice-avmedia-backend-gstreamer libgtk-3-0
+d libreoffice-avmedia-backend-gstreamer ure
+d libreoffice-avmedia-backend-gstreamer uno-libs3
+d libreoffice-avmedia-backend-gstreamer libreoffice-core
+d libreoffice-draw libavahi-client3
+d libreoffice-draw libvisio-0.1-1
+d libreoffice-draw libgcc1
+d libreoffice-draw libpng16-16
+d libreoffice-draw uno-libs3
+d libreoffice-draw libwpg-0.3-3
+d libreoffice-draw libicu60
+d libreoffice-draw libc6
+d libreoffice-draw libdbus-1-3
+d libreoffice-draw libavahi-common3
+d libreoffice-draw libfreehand-0.1-1
+d libreoffice-draw libxml2
+d libreoffice-draw libpagemaker-0.0-0
+d libreoffice-draw libreoffice-core
+d libreoffice-draw libglib2.0-0
+d libreoffice-draw librevenge-0.0-0
+d libreoffice-draw libmspub-0.1-1
+d libreoffice-draw libmwaw-0.3-3
+d libreoffice-draw ure
+d libreoffice-draw libodfgen-0.1-1
+d libreoffice-draw libcdr-0.1-1
+d libreoffice-draw zlib1g
+d cpp-7 gcc-7-base
+d cpp-7 libc6
+d cpp-7 libgmp10
+d cpp-7 libisl19
+d cpp-7 libmpfr6
+d cpp-7 zlib1g
+d cpp-7 libmpc3
+d cpp-doc cpp-7-doc
+d libgmp10 libc6
+d libgcc-7-dev gcc-7-base
+d libgcc-7-dev libcilkrts5
+d libgcc-7-dev libitm1
+d libgcc-7-dev libgcc1
+d libgcc-7-dev libquadmath0
+d libgcc-7-dev libgomp1
+d libgcc-7-dev libatomic1
+d libgcc-7-dev libmpx2
+d libgcc-7-dev libtsan0
+d libgcc-7-dev libasan4
+d libgcc-7-dev liblsan0
+d libgcc-7-dev libubsan0
+d libisl19 libc6
+d libisl19 libgmp10
+d binutils libc6
+d binutils binutils-x86-64-linux-gnu
+d binutils libbinutils
+d binutils binutils-common
+d binutils zlib1g
+d libmpfr6 libc6
+d libmpfr6 libgmp10
+d libcc1-0 libc6
+d libcc1-0 gcc-8-base
+d libcc1-0 libgcc1
+d libmpc3 libc6
+d libmpc3 libmpfr6
+d libmpc3 libgmp10
+d gcc-7-doc gcc-7-base
+d gcc-7-doc dpkg install-info
+d libudev1 libc6
+d gtk-update-icon-cache libc6
+d gtk-update-icon-cache libglib2.0-0
+d gtk-update-icon-cache libgdk-pixbuf2.0-0
+d adwaita-icon-theme-full adwaita-icon-theme
+d adwaita-icon-theme-full librsvg2-common
+d adwaita-icon-theme-full gtk-update-icon-cache
+d ubuntu-mono humanity-icon-theme
+d ubuntu-mono adwaita-icon-theme
+d ubuntu-mono hicolor-icon-theme
+d librsvg2-common libc6
+d librsvg2-common librsvg2-2
+d librsvg2-common libglib2.0-0
+d librsvg2-common libgdk-pixbuf2.0-0
+d libsoup-gnome2.4-1 libc6
+d libsoup-gnome2.4-1 libglib2.0-0
+d libsoup-gnome2.4-1 libsoup2.4-1
+d libsoup2.4-1 libc6
+d libsoup2.4-1 libglib2.0-0
+d libsoup2.4-1 libsqlite3-0
+d libsoup2.4-1 libgssapi-krb5-2
+d libsoup2.4-1 glib-networking
+d libsoup2.4-1 libxml2
+d libatspi2.0-0 libc6
+d libatspi2.0-0 libglib2.0-0
+d libatspi2.0-0 libdbus-1-3
+d libatspi2.0-0 libx11-6
+d dconf-gsettings-backend libc6
+d dconf-gsettings-backend libglib2.0-0
+d dconf-gsettings-backend libdconf1
+d dconf-gsettings-backend dconf-service
+d libdatrie1 libc6
+d libjbig0 libc6
+d ucf sensible-utils
+d ucf coreutils
+d ucf debconf
+d liblz4-1 libc6
+d libpcre3-dev libpcre3
+d libpcre3-dev libpcrecpp0v5
+d libpcre3-dev libpcre16-3
+d libpcre3-dev libc6-dev
+d libpcre3-dev libpcre32-3
+d libblkid1 libc6
+d libblkid1 libuuid1
+d libsuitesparseconfig5 libc6
+d default-jre-headless openjdk-11-jre-headless
+d default-jre-headless java-common
+d openjdk-11-jre libc6
+d openjdk-11-jre libxext6
+d openjdk-11-jre libx11-6
+d openjdk-11-jre libpng16-16
+d openjdk-11-jre libgif7
+d openjdk-11-jre openjdk-11-jre-headless
+d openjdk-11-jre libjpeg8
+d openjdk-11-jre libgl1
+d libgpg-error0 libc6
+d libtasn1-6 libc6
+d libp11-kit0 libc6
+d libp11-kit0 libffi6
+d libunistring2 libc6
+d libhogweed4 libc6
+d libhogweed4 libgmp10
+d libhogweed4 libnettle6
+d libkrb5support0 libc6
+d libkrb5-3 libc6
+d libkrb5-3 libkeyutils1
+d libkrb5-3 libkrb5support0
+d libkrb5-3 libcom-err2
+d libkrb5-3 libk5crypto3
+d libcom-err2 libc6
+d libk5crypto3 libc6
+d libk5crypto3 libkrb5support0
+d libuuid1 libc6
+d libmhash2 multiarch-support
+d libyajl2 libc6
+d libassuan0 libc6
+d libassuan0 libgpg-error0
+d gnupg dirmngr
+d gnupg gnupg-l10n
+d gnupg gpgv
+d gnupg gpg
+d gnupg gnupg-utils
+d gnupg gpg-agent
+d gnupg gpg-wks-server
+d gnupg gpgsm
+d gnupg gpg-wks-client
+d gpg libc6
+d gpg gpgconf
+d gpg libbz2-1.0
+d gpg libgpg-error0
+d gpg libsqlite3-0
+d gpg libgcrypt20
+d gpg zlib1g
+d gpg libreadline7
+d gpg libassuan0
+d libheimntlm0-heimdal libc6
+d libheimntlm0-heimdal libwind0-heimdal
+d libheimntlm0-heimdal libhcrypto4-heimdal
+d libheimntlm0-heimdal libkrb5-26-heimdal
+d libheimntlm0-heimdal libroken18-heimdal
+d libhcrypto4-heimdal libasn1-8-heimdal
+d libhcrypto4-heimdal libc6
+d libhcrypto4-heimdal libheimbase1-heimdal
+d libhcrypto4-heimdal libroken18-heimdal
+d libkrb5-26-heimdal libc6
+d libkrb5-26-heimdal libwind0-heimdal
+d libkrb5-26-heimdal libhcrypto4-heimdal
+d libkrb5-26-heimdal libhx509-5-heimdal
+d libkrb5-26-heimdal libsqlite3-0
+d libkrb5-26-heimdal libcomerr2
+d libkrb5-26-heimdal libheimbase1-heimdal
+d libkrb5-26-heimdal libasn1-8-heimdal
+d libkrb5-26-heimdal libroken18-heimdal
+d libcomerr2 libcom-err2
+d libasn1-8-heimdal libc6
+d libasn1-8-heimdal libcomerr2
+d libasn1-8-heimdal libroken18-heimdal
+d libroken18-heimdal libc6
+d libsasl2-modules-db libc6
+d libsasl2-modules-db libdb5.3
+d python3.6 libpython3.6-stdlib
+d python3.6 python3.6-minimal
+d python3.6 mime-support
+d libpython3.6 libc6
+d libpython3.6 libpython3.6-stdlib
+d libpython3.6 libexpat1
+d libpython3.6 zlib1g
+d python3 python3-minimal
+d libreoffice-base-drivers libc6
+d libreoffice-base-drivers libgcc1
+d libreoffice-base-drivers ure
+d libreoffice-base-drivers uno-libs3
+d libreoffice-base-drivers libreoffice-core
+d libe-book-0.1-1 libc6
+d libe-book-0.1-1 libgcc1
+d libe-book-0.1-1 librevenge-0.0-0
+d libe-book-0.1-1 zlib1g
+d libe-book-0.1-1 libxml2
+d libe-book-0.1-1 libicu60
+d libe-book-0.1-1 liblangtag1
+d libabw-0.1-1 libc6
+d libabw-0.1-1 libgcc1
+d libabw-0.1-1 librevenge-0.0-0
+d libabw-0.1-1 zlib1g
+d libabw-0.1-1 libxml2
+d libepubgen-0.1-1 libc6
+d libepubgen-0.1-1 librevenge-0.0-0
+d libepubgen-0.1-1 libgcc1
+d libwpd-0.10-10 libc6
+d libwpd-0.10-10 librevenge-0.0-0
+d libwpd-0.10-10 libgcc1
+d libwpg-0.3-3 libc6
+d libwpg-0.3-3 libgcc1
+d libwpg-0.3-3 librevenge-0.0-0
+d libwpg-0.3-3 libwpd-0.10-10
+d libgstreamer-plugins-base1.0-0 libc6
+d libgstreamer-plugins-base1.0-0 libglib2.0-0
+d libgstreamer-plugins-base1.0-0 zlib1g
+d libgstreamer-plugins-base1.0-0 liborc-0.4-0
+d libgstreamer-plugins-base1.0-0 libgstreamer1.0-0
+d libgstreamer-plugins-base1.0-0 iso-codes
+d libgstreamer1.0-0 libc6
+d libgstreamer1.0-0 libglib2.0-0
+d libgstreamer1.0-0 libcap2
+d libgstreamer1.0-0 libcap2-bin
+d libvisio-0.1-1 libc6
+d libvisio-0.1-1 libgcc1
+d libvisio-0.1-1 librevenge-0.0-0
+d libvisio-0.1-1 libxml2
+d libvisio-0.1-1 libicu60
+d libfreehand-0.1-1 libc6
+d libfreehand-0.1-1 liblcms2-2
+d libfreehand-0.1-1 libgcc1
+d libfreehand-0.1-1 librevenge-0.0-0
+d libfreehand-0.1-1 zlib1g
+d libpagemaker-0.0-0 libc6
+d libpagemaker-0.0-0 librevenge-0.0-0
+d libpagemaker-0.0-0 libgcc1
+d libmspub-0.1-1 libc6
+d libmspub-0.1-1 libgcc1
+d libmspub-0.1-1 librevenge-0.0-0
+d libmspub-0.1-1 zlib1g
+d libmspub-0.1-1 libicu60
+d libcdr-0.1-1 libc6
+d libcdr-0.1-1 liblcms2-2
+d libcdr-0.1-1 libgcc1
+d libcdr-0.1-1 librevenge-0.0-0
+d libcdr-0.1-1 zlib1g
+d libcdr-0.1-1 libicu60
+d cpp-7-doc gcc-7-base
+d cpp-7-doc dpkg install-info
+d libcilkrts5 gcc-7-base
+d libcilkrts5 libgcc1
+d libcilkrts5 libc6
+d libitm1 libc6
+d libitm1 gcc-8-base
+d libquadmath0 libc6
+d libquadmath0 gcc-8-base
+d libgomp1 libc6
+d libgomp1 gcc-8-base
+d libatomic1 libc6
+d libatomic1 gcc-8-base
+d libmpx2 libc6
+d libmpx2 gcc-8-base
+d libtsan0 libc6
+d libtsan0 gcc-8-base
+d libtsan0 libgcc1
+d libasan4 gcc-7-base
+d libasan4 libgcc1
+d libasan4 libc6
+d liblsan0 libc6
+d liblsan0 gcc-8-base
+d liblsan0 libgcc1
+d libubsan0 gcc-7-base
+d libubsan0 libgcc1
+d libubsan0 libc6
+d binutils-x86-64-linux-gnu libc6
+d binutils-x86-64-linux-gnu zlib1g
+d binutils-x86-64-linux-gnu binutils-common
+d binutils-x86-64-linux-gnu libbinutils
+d libbinutils libc6
+d libbinutils zlib1g
+d libbinutils binutils-common
+d binutils-multiarch libc6
+d binutils-multiarch zlib1g
+d binutils-multiarch binutils
+d binutils-multiarch binutils-common
+d binutils-mingw-w64-i686 libc6
+d binutils-mingw-w64-i686 zlib1g
+d binutils-mingw-w64-i686 binutils-common
+d binutils-mingw-w64-x86-64 libc6
+d binutils-mingw-w64-x86-64 zlib1g
+d binutils-mingw-w64-x86-64 binutils-common
+d install-info dpkg
+d humanity-icon-theme adwaita-icon-theme
+d humanity-icon-theme hicolor-icon-theme
+d librsvg2-2 libc6
+d librsvg2-2 libglib2.0-0
+d librsvg2-2 libcroco3
+d librsvg2-2 libpango-1.0-0
+d librsvg2-2 libpangocairo-1.0-0
+d librsvg2-2 libgdk-pixbuf2.0-0
+d librsvg2-2 libxml2
+d librsvg2-2 libcairo2
+d librsvg2-2 libfontconfig1
+d librsvg2-2 libpangoft2-1.0-0
+d glib-networking libc6
+d glib-networking gsettings-desktop-schemas
+d glib-networking libproxy1v5
+d glib-networking libglib2.0-0
+d glib-networking glib-networking-common
+d glib-networking glib-networking-services
+d glib-networking libgnutls30
+d glib-networking libp11-kit0
+d dconf-service libc6
+d dconf-service libglib2.0-0
+d dconf-service libdconf1
+d coreutils libc6
+d coreutils libacl1
+d coreutils libattr1
+d coreutils libselinux1
+d debconf perl-base
+d libpcrecpp0v5 libc6
+d libpcrecpp0v5 libpcre3
+d libpcrecpp0v5 libgcc1
+d libpcre16-3 libc6
+d libc6-dev libc6
+d libc6-dev libc-dev-bin
+d libc6-dev linux-libc-dev
+d libpcre32-3 libc6
+d openjdk-11-jre-headless libc6
+d openjdk-11-jre-headless liblcms2-2
+d openjdk-11-jre-headless libxext6
+d openjdk-11-jre-headless libgcc1
+d openjdk-11-jre-headless ca-certificates-java
+d openjdk-11-jre-headless libx11-6
+d openjdk-11-jre-headless libxtst6
+d openjdk-11-jre-headless util-linux
+d openjdk-11-jre-headless libpcsclite1
+d openjdk-11-jre-headless libnss3
+d openjdk-11-jre-headless libfontconfig1
+d openjdk-11-jre-headless libasound2
+d openjdk-11-jre-headless libxrender1
+d openjdk-11-jre-headless zlib1g
+d openjdk-11-jre-headless libcups2
+d openjdk-11-jre-headless libxi6
+d openjdk-11-jre-headless libjpeg8
+d openjdk-11-jre-headless libfreetype6
+d openjdk-11-jre-headless java-common
+d libgif7 libc6
+d libgl1 libc6
+d libgl1 libglvnd0
+d libgl1 libglx0
+d libkeyutils1 libc6
+d dirmngr libc6
+d dirmngr lsb-base
+d dirmngr libgnutls30
+d dirmngr gpgconf
+d dirmngr libgpg-error0
+d dirmngr libgcrypt20
+d dirmngr adduser
+d dirmngr libassuan0
+d dirmngr libksba8
+d dirmngr libldap-2.4-2
+d dirmngr libnpth0
+d gpgv libc6
+d gpgv libbz2-1.0
+d gpgv libgpg-error0
+d gpgv libgcrypt20
+d gpgv zlib1g
+d gnupg-utils libc6
+d gnupg-utils libbz2-1.0
+d gnupg-utils libgpg-error0
+d gnupg-utils libgcrypt20
+d gnupg-utils zlib1g
+d gnupg-utils libassuan0
+d gnupg-utils libksba8
+d gpg-agent libc6
+d gpg-agent gpgconf
+d gpg-agent pinentry pinentry-curses
+d gpg-agent libgpg-error0
+d gpg-agent libgcrypt20
+d gpg-agent libassuan0
+d gpg-agent libnpth0
+d gpg-wks-server libc6
+d gpg-wks-server libgpg-error0
+d gpg-wks-server gpg
+d gpg-wks-server libgcrypt20
+d gpg-wks-server gpg-agent
+d gpgsm libc6
+d gpgsm gpgconf
+d gpgsm libgpg-error0
+d gpgsm libgcrypt20
+d gpgsm libreadline7
+d gpgsm libassuan0
+d gpgsm libksba8
+d gpg-wks-client libc6
+d gpg-wks-client dirmngr
+d gpg-wks-client libgpg-error0
+d gpg-wks-client gpg
+d gpg-wks-client libgcrypt20
+d gpg-wks-client gpg-agent
+d gpg-wks-client libassuan0
+d gpgconf libc6
+d gpgconf libgpg-error0
+d gpgconf libgcrypt20
+d gpgconf libreadline7
+d gpgconf libassuan0
+d libreadline7 libc6
+d libreadline7 readline-common
+d libreadline7 libtinfo5
+d libwind0-heimdal libc6
+d libwind0-heimdal libcomerr2
+d libwind0-heimdal libroken18-heimdal
+d libheimbase1-heimdal libc6
+d libhx509-5-heimdal libc6
+d libhx509-5-heimdal libwind0-heimdal
+d libhx509-5-heimdal libhcrypto4-heimdal
+d libhx509-5-heimdal libcomerr2
+d libhx509-5-heimdal libheimbase1-heimdal
+d libhx509-5-heimdal libasn1-8-heimdal
+d libhx509-5-heimdal libroken18-heimdal
+d libpython3.6-stdlib libc6
+d libpython3.6-stdlib libtinfo5
+d libpython3.6-stdlib libffi6
+d libpython3.6-stdlib libmpdec2
+d libpython3.6-stdlib libbz2-1.0
+d libpython3.6-stdlib liblzma5
+d libpython3.6-stdlib libncursesw5
+d libpython3.6-stdlib libsqlite3-0
+d libpython3.6-stdlib libdb5.3
+d libpython3.6-stdlib libreadline7
+d libpython3.6-stdlib mime-support
+d libpython3.6-stdlib libpython3.6-minimal
+d python3.6-minimal libc6
+d python3-minimal python3.6-minimal
+d liborc-0.4-0 libc6
+d libgstreamer-plugins-bad1.0-0 libc6
+d libgstreamer-plugins-bad1.0-0 libgstreamer1.0-0
+d libgstreamer-plugins-bad1.0-0 libglib2.0-0
+d libgstreamer-plugins-bad1.0-0 libgstreamer-plugins-base1.0-0
+d libcap2 libc6
+d libcap2-bin libc6
+d libcap2-bin libcap2
+d libcroco3 libc6
+d libcroco3 libglib2.0-0
+d libcroco3 libxml2
+d gsettings-desktop-schemas dconf-gsettings-backend gsettings-backend
+d libproxy1v5 libc6
+d libproxy1v5 libgcc1
+d glib-networking-services libc6
+d glib-networking-services glib-networking-common
+d glib-networking-services libproxy1v5
+d glib-networking-services libglib2.0-0
+d libacl1 libc6
+d libacl1 libattr1
+d libattr1 libc6
+d perl-base libc6
+d perl-base dpkg
+d dialog libc6
+d dialog libncursesw5
+d dialog libtinfo5
+d dialog debianutils
+d cdebconf libc6
+d cdebconf libslang2
+d cdebconf libdebian-installer4
+d cdebconf libtextwrap1
+d cdebconf debconf
+d cdebconf libselinux1
+d cdebconf dpkg
+d cdebconf libnewt0.52
+d menu libc6
+d menu libgcc1
+d apt libc6
+d apt libgcc1
+d apt libgnutls30
+d apt adduser
+d apt gpgv gpgv1 gpgv2
+d apt libseccomp2
+d apt libapt-pkg5.0
+d apt ubuntu-keyring
+d debconf-utils debconf
+d whiptail libc6
+d whiptail libslang2
+d whiptail libpopt0
+d whiptail libnewt0.52
+d libc-dev-bin libc6
+d ca-certificates-java libnss3
+d ca-certificates-java java8-runtime-headless openjdk-11-jre-headless
+d ca-certificates-java ca-certificates
+d libxtst6 libc6
+d libxtst6 libxext6
+d libxtst6 x11-common
+d libxtst6 libx11-6
+d util-linux libc6
+d util-linux libtinfo5
+d util-linux libsystemd0
+d util-linux libmount1
+d util-linux libudev1
+d util-linux libselinux1
+d util-linux libpam0g
+d util-linux zlib1g
+d util-linux libuuid1
+d util-linux libblkid1
+d util-linux libsmartcols1
+d util-linux libaudit1
+d libpcsclite1 libc6
+d libasound2 libasound2-data
+d libasound2 libc6
+d openjdk-11-jdk-headless libc6
+d openjdk-11-jdk-headless openjdk-11-jre-headless
+d libglvnd0 libc6
+d libglx0 libc6
+d libglx0 libglvnd0
+d libglx0 libglx-mesa0
+d libglx0 libx11-6
+d adduser passwd
+d adduser debconf debconf-2.0
+d libksba8 libc6
+d libksba8 libgpg-error0
+d libnpth0 libc6
+d pinentry-curses libc6
+d pinentry-curses libtinfo5
+d pinentry-curses libncursesw5
+d pinentry-curses libgpg-error0
+d pinentry-curses libassuan0
+d readline-common dpkg install-info
+d libtinfo5 libc6
+d libmpdec2 libc6
+d libncursesw5 libtinfo5
+d libncursesw5 libc6
+d libpython3.6-minimal libc6
+d libpython3.6-minimal libssl1.1
+d binfmt-support libc6
+d binfmt-support libpipeline1
+d binfmt-support lsb-base
+d acl libc6
+d acl libacl1
+d attr libc6
+d attr libattr1
+d doc-base libuuid-perl
+d doc-base libyaml-tiny-perl
+d safe-rm debconf
+d mono-gac mono-4.0-gac
+d update-inetd libfile-copy-recursive-perl
+d update-inetd libfile-temp-perl
+d update-inetd debconf debconf-2.0
+d debianutils libc6
+d libslang2 libc6
+d libdebian-installer4 libc6
+d libtextwrap1 libc6
+d libnewt0.52 libc6
+d libnewt0.52 libslang2
+d gpgv1 libc6
+d gpgv1 zlib1g
+d gpgv1 libbz2-1.0
+d gpgv2 gpgv
+d libseccomp2 libc6
+d libapt-pkg5.0 libc6
+d libapt-pkg5.0 libzstd1
+d libapt-pkg5.0 libgcc1
+d libapt-pkg5.0 libsystemd0
+d libapt-pkg5.0 libbz2-1.0
+d libapt-pkg5.0 liblzma5
+d libapt-pkg5.0 libudev1
+d libapt-pkg5.0 liblz4-1
+d libapt-pkg5.0 zlib1g
+d libpopt0 libc6
+d ca-certificates openssl
+d ca-certificates debconf debconf-2.0
+d libpam0g libc6
+d libpam0g debconf debconf-2.0
+d libpam0g libaudit1
+d libsmartcols1 libc6
+d libaudit1 libc6
+d libaudit1 libaudit-common
+d libaudit1 libcap-ng0
+d libglx-mesa0 libc6
+d libglx-mesa0 libxext6
+d libglx-mesa0 libxdamage1
+d libglx-mesa0 libglapi-mesa
+d libglx-mesa0 libxcb-present0
+d libglx-mesa0 libx11-6
+d libglx-mesa0 libxcb-dri2-0
+d libglx-mesa0 libdrm2
+d libglx-mesa0 libxcb-sync1
+d libglx-mesa0 libxxf86vm1
+d libglx-mesa0 libx11-xcb1
+d libglx-mesa0 libxcb1
+d libglx-mesa0 libgl1-mesa-dri
+d libglx-mesa0 libxfixes3
+d libglx-mesa0 libexpat1
+d libglx-mesa0 libxcb-glx0
+d libglx-mesa0 libxshmfence1
+d libglx-mesa0 libxcb-dri3-0
+d passwd libc6
+d passwd libsemanage1
+d passwd libselinux1
+d passwd libpam0g
+d passwd libpam-modules
+d passwd libaudit1
+d libreadline5 libc6
+d libreadline5 readline-common
+d libreadline5 libtinfo5
+d libssl1.1 libc6
+d libssl1.1 debconf debconf-2.0
+d libpipeline1 libc6
+d xfsdump libc6
+d xfsdump libtinfo5
+d xfsdump libattr1
+d xfsdump libncurses5
+d xfsdump libuuid1
+d xfsdump xfsprogs
+d libuuid-perl libc6
+d libuuid-perl libuuid1
+d libuuid-perl perl-base
+d libuuid-perl perlapi-5.26.0
+d libyaml-tiny-perl perl
+d mono-4.0-gac libc6
+d mono-4.0-gac libmono-corlib4.5-cil
+d mono-4.0-gac libmono-security4.0-cil
+d libfile-copy-recursive-perl perl
+d libpopt-dev libpopt0
+d libpopt-dev libc-dev libc6-dev
+d rpm libc6
+d rpm libpopt0
+d rpm debugedit
+d rpm librpmsign8
+d rpm librpm8
+d rpm libelf1
+d rpm rpm2cpio
+d rpm librpmio8
+d rpm librpmbuild8
+d rpm rpm-common
+d openssl libc6
+d openssl libssl1.1
+d libcap-ng0 libc6
+d libglapi-mesa libc6
+d libxcb-present0 libc6
+d libxcb-present0 libxcb1
+d libxcb-dri2-0 libc6
+d libxcb-dri2-0 libxcb1
+d libdrm2 libc6
+d libdrm2 libdrm-common
+d libxcb-sync1 libc6
+d libxcb-sync1 libxcb1
+d libxxf86vm1 multiarch-support
+d libgl1-mesa-dri libc6
+d libgl1-mesa-dri libgcc1
+d libgl1-mesa-dri libglapi-mesa
+d libgl1-mesa-dri libdrm-intel1
+d libgl1-mesa-dri libdrm2
+d libgl1-mesa-dri libllvm8
+d libgl1-mesa-dri libelf1
+d libgl1-mesa-dri libexpat1
+d libgl1-mesa-dri libdrm-amdgpu1
+d libgl1-mesa-dri libdrm-radeon1
+d libgl1-mesa-dri libdrm-nouveau2
+d libgl1-mesa-dri zlib1g
+d libgl1-mesa-dri libsensors4
+d libxcb-glx0 libc6
+d libxcb-glx0 libxcb1
+d libxshmfence1 libc6
+d libxcb-dri3-0 libc6
+d libxcb-dri3-0 libxcb1
+d libsemanage1 libc6
+d libsemanage1 libsepol1
+d libsemanage1 libbz2-1.0
+d libsemanage1 libselinux1
+d libsemanage1 libsemanage-common
+d libsemanage1 libaudit1
+d libpam-modules libc6
+d libpam-modules debconf debconf-2.0
+d libpam-modules libselinux1
+d libpam-modules libpam0g
+d libpam-modules libdb5.3
+d libpam-modules libpam-modules-bin
+d libpam-modules libaudit1
+d libncurses5 libtinfo5
+d libncurses5 libc6
+d xfsprogs libblkid1
+d xfsprogs libuuid1
+d xfsprogs libc6
+d xfsprogs libreadline5
+d perl dpkg
+d libmono-corlib4.5-cil mono-runtime
+d libmono-corlib4.5-cil tzdata
+d libmono-security4.0-cil libmono-corlib4.5-cil
+d libmono-security4.0-cil libmono-system4.0-cil
+d debugedit libc6
+d debugedit libpopt0
+d debugedit libdw1
+d debugedit libelf1
+d debugedit librpmio8
+d librpmsign8 libc6
+d librpmsign8 librpm8
+d librpmsign8 libpopt0
+d librpmsign8 librpmio8
+d librpm8 libc6
+d librpm8 libpopt0
+d librpm8 libcap2
+d librpm8 libdb5.3
+d librpm8 liblua5.2-0
+d librpm8 librpmio8
+d libelf1 libc6
+d libelf1 zlib1g
+d rpm2cpio libc6
+d rpm2cpio libarchive13
+d rpm2cpio librpmio8
+d rpm2cpio librpm8
+d rpm2cpio rpm-common
+d librpmio8 libc6
+d librpmio8 libzstd1
+d librpmio8 libpopt0
+d librpmio8 libelf1
+d librpmio8 libbz2-1.0
+d librpmio8 liblzma5
+d librpmio8 libnss3
+d librpmio8 zlib1g
+d librpmio8 liblua5.2-0
+d librpmbuild8 libc6
+d librpmbuild8 libpopt0
+d librpmbuild8 libdw1
+d librpmbuild8 libelf1
+d librpmbuild8 librpmio8
+d librpmbuild8 librpm8
+d librpmbuild8 libmagic1
+d rpm-common libc6
+d rpm-common libdbus-1-3
+d rpm-common libselinux1
+d rpm-common librpmio8
+d rpm-common librpm8
+d libdrm-intel1 libc6
+d libdrm-intel1 libpciaccess0
+d libdrm-intel1 libdrm2
+d libllvm8 libc6
+d libllvm8 libtinfo5
+d libllvm8 libgcc1
+d libllvm8 libedit2
+d libllvm8 zlib1g
+d libllvm8 libffi6
+d libdrm-amdgpu1 libc6
+d libdrm-amdgpu1 libdrm2
+d libdrm-radeon1 libc6
+d libdrm-radeon1 libdrm2
+d libdrm-nouveau2 libc6
+d libdrm-nouveau2 libdrm2
+d libsensors4 libc6
+d libsepol1 libc6
+d libpam-modules-bin libc6
+d libpam-modules-bin libpam0g
+d libpam-modules-bin libaudit1
+d libpam-modules-bin libselinux1
+d libjson-pp-perl perl
+d mono-runtime libc6
+d mono-runtime mono-runtime-sgen
+d tzdata debconf debconf-2.0
+d libmono-system4.0-cil libmono-security4.0-cil
+d libmono-system4.0-cil libmono-system-xml4.0-cil
+d libmono-system4.0-cil libmono-system-configuration4.0-cil
+d libmono-system4.0-cil libc6
+d libmono-system4.0-cil mono-runtime
+d libmono-system4.0-cil libmono-corlib4.5-cil
+d libdw1 libc6
+d libdw1 libelf1
+d libdw1 libbz2-1.0
+d libdw1 liblzma5
+d libdw1 zlib1g
+d liblua5.2-0 libc6
+d libarchive13 libc6
+d libarchive13 libnettle6
+d libarchive13 libbz2-1.0
+d libarchive13 liblzma5
+d libarchive13 liblz4-1
+d libarchive13 zlib1g
+d libarchive13 libxml2
+d libarchive13 libacl1
+d libarchive13 liblzo2-2
+d libmagic1 libc6
+d libmagic1 zlib1g
+d libmagic1 libmagic-mgc
+d libpciaccess0 libc6
+d libpciaccess0 zlib1g
+d libedit2 libc6
+d libedit2 libtinfo5
+d mono-runtime-sgen libc6
+d mono-runtime-sgen libgcc1
+d mono-runtime-sgen mono-runtime-common
+d libmono-system-xml4.0-cil libmono-corlib4.5-cil
+d libmono-system-xml4.0-cil libmono-system-configuration4.0-cil
+d libmono-system-xml4.0-cil libmono-system4.0-cil
+d libmono-system-configuration4.0-cil libmono-system4.0-cil
+d libmono-system-configuration4.0-cil libmono-system-xml4.0-cil
+d libmono-system-configuration4.0-cil mono-runtime
+d libmono-system-configuration4.0-cil libmono-corlib4.5-cil
+d libmono-system-configuration4.0-cil libmono-system-security4.0-cil
+d liblzo2-2 multiarch-support
+d mono-runtime-common libc6
+d mono-runtime-common zlib1g
+d mono-runtime-common binutils
+d mono-runtime-common mono-gac
+d libmono-system-security4.0-cil libmono-corlib4.5-cil
+d libmono-system-security4.0-cil libmono-system4.0-cil
+d libmono-system-security4.0-cil libmono-system-xml4.0-cil
+d libmono-system-security4.0-cil libmono-security4.0-cil
+c chromium-browser chromium-browser-inspector
+c libreoffice-common libreoffice-wiki-publisher
+c libreoffice-dev libreoffice-dev-doc
+c libreoffice-dev libreoffice
+c libreoffice-dev-common libreoffice
+c gcc gcc-doc
+c libldap-2.4-2 ldap-utils
+c libreoffice-dev-doc libreoffice
+c libreoffice-dev-doc libreoffice-dev
+c libreoffice libreoffice-dev-doc
+c libreoffice libreoffice-dev
+c cpp cpp-doc
+c fontconfig-config fontconfig
+c libpcre3 libpcre3-dev
+c ldap-utils openldap-utils
+c ldap-utils ldap-client
+c binutils binutils-multiarch
+c binutils binutils-mingw-w64-i686
+c binutils binutils-mingw-w64-x86-64
+c libgstreamer-plugins-base1.0-0 libgstreamer-plugins-bad1.0-0
+c debconf dialog
+c debconf cdebconf
+c debconf menu
+c debconf apt
+c debconf debconf-utils
+c debconf whiptail
+c libpcrecpp0v5 libpcre3
+c openjdk-11-jre-headless openjdk-11-jdk-headless
+c python3.6-minimal binfmt-support
+c libacl1 acl
+c libattr1 attr
+c perl-base doc-base
+c perl-base safe-rm
+c perl-base mono-gac
+c perl-base update-inetd
+c debconf-utils debconf
+c linux-libc-dev linux-kernel-headers
+c openjdk-11-jdk-headless openjdk-11-jre-headless
+c readline-common libreadline5
+c libpython3.6-minimal binfmt-support
+c attr xfsdump
+c libpopt0 libpopt-dev
+c libpopt0 rpm
+c xfsdump xfsprogs
+c libpam-modules libpam-umask
+c libpam-modules libpam-motd
+c libpam-modules libpam-mkhomedir
+c perl libjson-pp-perl
+c mono-runtime-common mono-runtime

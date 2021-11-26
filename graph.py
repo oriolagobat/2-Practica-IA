@@ -130,15 +130,18 @@ class Graph(object):
         formula = wcnf.WCNFFormula()
         # Create variables
         nodes = [formula.new_var() for _ in range(self.n_nodes)]
+
         # Soft clauses
         for n in nodes:
             formula.add_clause([n], weight=1)
 
         # Hard clauses
         for v1, v2 in itertools.product(range(1, self.n_nodes + 1), range(1, self.n_nodes + 1)):
-            if (v1, v2) not in self.edges and (v2,
-                                               v1) not in self.edges and v1 < v2:  # Només voldre carregare aquells que tinguin la primera coordenada menor que la segona
+
+            # Load only those edges whose first coord is less than the second
+            if (v1, v2) not in self.edges and (v2, v1) not in self.edges and v1 < v2:
                 formula.add_clause([-v1, -v2], weight=wcnf.TOP_WEIGHT)
+
         # Solve formula
         print("MAX_CLIQUE", file=sys.stderr)
         print(formula, end="\n\n", file=sys.stderr)
@@ -155,8 +158,10 @@ class Graph(object):
         """
         # Instantiate the formula
         formula = wcnf.WCNFFormula()
+
         # Create variables
         nodes = [formula.new_var() for _ in range(self.n_nodes)]
+
         # Soft clauses
         for e1, e2 in self.edges:
             v1, v2 = nodes[e1 - 1], nodes[e2 - 1]

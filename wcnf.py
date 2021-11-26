@@ -88,31 +88,49 @@ class WCNFFormula(object):
         of this one."""
         formula13 = WCNFFormula()
 
+        # Generate variables that already exist in this formula
         for _ in range(self.num_vars):
             formula13.new_var()
-        # Soft
 
-        for c in self.hard:
-            print(c)
+        # Soft - For every soft clause in the formula
+        for weight, clause in self.soft:
+            # Generate new variable "b", add it as a soft clause and generate the subsequent hard clauses
+            formula13.new_var()
+            formula13.add_clause([-formula13.num_vars], weight)
+            # Send hard clauses to the method that translates it to 1,3
+            self.to_13wpm_hard(formula13, [[formula13.num_vars] + clause])
 
-        # Hard
+        # Hard - Call the method to translate it
         self.to_13wpm_hard(formula13, self.hard)
+
         return formula13
 
     def to_13wpm_hard(self, formula13, llista):
-        for c in llista:
-            literals = len(c)
+        """
+        Translates hard clauses to 3 literals
+        """
+
+        # For every hard clause in the formula
+        for clause in llista:
+            literals = len(clause)
+
             if literals < 3:
-                new_clause = c + [c[1]] if literals == 2 else c * 3
-                formula13.add_clause(new_clause, TOP_WEIGHT)
-            elif literals == 3:
-                formula13.add_clause(c, TOP_WEIGHT)
-            else:  # > 3
-                formula13.new_var()
-                new_clause = c[:2] + [formula13.num_vars]
+                # Add the same clause and duplicate last literal until there are three
+                new_clause = clause + [clause[1]] if literals == 2 else clause * 3
                 formula13.add_clause(new_clause, TOP_WEIGHT)
 
-                self.to_13wpm_hard(formula13, [[-formula13.num_vars] + c[2:]])
+            elif literals == 3:
+                # Add the same clause
+                formula13.add_clause(clause, TOP_WEIGHT)
+
+            else:  # > 3
+                # Generate new variable "z" and append it next to the first two literals
+                formula13.new_var()
+                new_clause = clause[:2] + [formula13.num_vars]
+                formula13.add_clause(new_clause, TOP_WEIGHT)
+
+                # Do a recurisva call on the remaining literals
+                self.to_13wpm_hard(formula13, [[-formula13.num_vars] + clause[2:]])
 
     def sum_soft_weights(self):
         return self._sum_soft_weights
