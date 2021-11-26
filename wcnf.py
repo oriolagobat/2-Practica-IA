@@ -92,7 +92,8 @@ class WCNFFormula(object):
             formula13.new_var()
         # Soft
 
-        #
+        for c in self.hard:
+            print(c)
 
         # Hard
         self.to_13wpm_hard(formula13, self.hard)
