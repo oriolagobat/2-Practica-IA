@@ -45,6 +45,10 @@ class SPU(object):
                 pass
 
         print(self.formula, file=sys.stderr)
+        print("Dependencies")
+        print(self.dependencies)
+        print("Conflicts")
+        print(self.conflicts)
 
         if len(self.packages) != self.num_packages:  # AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA FER UN TEST PER COMPROBAR AIXÒ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
             print("Nombre de paquets incorrecte...")
@@ -54,18 +58,6 @@ class SPU(object):
         solution = self.solver.solve(self.formula)
         return solution
 
-    def print_solution(self, solution):
-        opt, model = solution
-        print("o " + str(opt))
-        print("v", end="")
-        for n in model:
-            if n < 0:
-                print(" " + self.package_ids[abs(n)], end="")
-        print()
-
-    def check_solution(self, solution):
-        print()
-
     def manage_package(self, package):
         package_id = len(self.packages) + 1
         self.packages[package] = package_id
@@ -73,12 +65,19 @@ class SPU(object):
         self.formula.new_var()  # Paquet 1 = variable "1" de la formula, ....
         self.formula.add_clause([self.packages[package]], weight=1)
 
+        # To help validate
+        self.dependencies[package] = []
+        self.conflicts[package] = []
+
     def manage_dependency(self, dependencies):
         self.check_package(dependencies[0])
         new_clause = []
         for dependency in dependencies[1:]:
             self.check_package(dependencies[1])
             new_clause += [self.packages[dependency]]
+
+            # To valdiate
+            self.dependencies[dependencies[0]] = self.dependencies[dependencies[0]] + [dependency]
         dependent = self.packages[dependencies[0]]
         self.formula.add_clause([-dependent] + new_clause, weight=wcnf.TOP_WEIGHT)
 
@@ -88,10 +87,56 @@ class SPU(object):
         conflict = self.packages[conflicts[1]]
         self.formula.add_clause([-conflictable] + [-conflict], weight=wcnf.TOP_WEIGHT)
 
+        # To validate
+        self.conflicts[conflicts[0]] = self.conflicts[conflicts[0]] + [conflicts[1]]
+
     def check_package(self, package):
         if self.packages.get(package) is None:
             print("El paquet no ha estat declarat...")
             sys.exit(2)
+
+    def print_solution(self,
+                       solution):  # AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA ALFABETIC AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        opt, model = solution
+        print("o " + str(opt))
+        print("v", end="")
+        for package in model:
+            if package < 0:
+                print(" " + self.package_ids[abs(package)], end="")
+        print()
+
+    def check_solution(self, solution):
+        _, model = solution
+        ok = True
+        for package in model:
+            if package > 0:
+                if not self.ok_dependencies(package, model) or not self.ok_conflicts(package, model):
+                    ok = False
+                    break
+        if ok:
+            print("c VALIDATION OK")
+        else:
+            print("c VALIDATION WRONG")
+
+    # AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AQUEST ES ELQ UE FALTE ARREGALR AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+    def ok_dependencies(self, package, model):
+        for pkg in model:
+            print(pkg)
+            if pkg > 0:
+                pkg = self.package_ids[pkg]
+                if pkg in self.dependencies[self.package_ids[package]]:
+                    return True
+        return False
+
+    def ok_conflicts(self, package, model):
+        for pkg in model:
+            print(pkg)
+            if pkg > 0:
+                pkg = self.package_ids[pkg]
+                if pkg in self.conflicts[self.package_ids[package]]:
+                    return False
+        return True
 
 
 def main(argv=None):
@@ -123,3 +168,5 @@ def parse_args(argv=None):
 
 if __name__ == '__main__':
     sys.exit(main())
+
+# AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA  passar pylint AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
