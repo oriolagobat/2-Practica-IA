@@ -16,6 +16,8 @@ class SPU(object):
         self.file_path = file_path
         self.formula = wcnf.WCNFFormula()
         self.solver = solver
+
+        # To validate
         self.dependencies = {}
         self.conflicts = {}
 
@@ -44,12 +46,9 @@ class SPU(object):
             else:  # Si # o qualsvol altra merda
                 pass
 
-        print(self.formula, file=sys.stderr)
-        print("Dependencies")
-        print(self.dependencies)
-        print("Conflicts")
-        print(self.conflicts)
-
+        print(len(self.packages))
+        print(self.num_packages)
+        
         if len(self.packages) != self.num_packages:  # AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA FER UN TEST PER COMPROBAR AIXÒ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
             print("Nombre de paquets incorrecte...")
             sys.exit(1)
@@ -77,7 +76,9 @@ class SPU(object):
             new_clause += [self.packages[dependency]]
 
             # To valdiate
-            self.dependencies[dependencies[0]] = self.dependencies[dependencies[0]] + [dependency]
+            # self.dependencies[dependencies[0]] = self.dependencies[dependencies[0]] + [dependency]
+            # self.dependencies[dependencies[0]] += [dependency]
+        self.dependencies[dependencies[0]] += [dependencies[1:]]
         dependent = self.packages[dependencies[0]]
         self.formula.add_clause([-dependent] + new_clause, weight=wcnf.TOP_WEIGHT)
 
@@ -120,21 +121,39 @@ class SPU(object):
 
     # AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AQUEST ES ELQ UE FALTE ARREGALR AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
+    # def ok_dependencies(self, package, model):
+    #     for pkg in model:
+    #         print(pkg)
+    #         if pkg > 0:
+    #             pkg = self.package_ids[pkg]
+    #             if pkg in self.dependencies[self.package_ids[package]]:
+    #                 return True
+    #     return False
+    #
+    # def ok_conflicts(self, package, model):
+    #     for pkg in model:
+    #         print(pkg)
+    #         if pkg > 0:
+    #             pkg = self.package_ids[pkg]
+    #             if pkg in self.conflicts[self.package_ids[package]]:
+    #                 return False
+    #     return True
+
     def ok_dependencies(self, package, model):
-        for pkg in model:
-            print(pkg)
-            if pkg > 0:
-                pkg = self.package_ids[pkg]
-                if pkg in self.dependencies[self.package_ids[package]]:
-                    return True
-        return False
+        sat_dependencies = 0
+        if self.dependencies.get(package) is None:
+            return True
+        for dependance in self.dependencies[package]:
+            for item in dependance:
+                if item in model and item > 0:
+                    sat_dependencies += 1
+                    break
+        return sat_dependencies == len(self.dependencies[package])
 
     def ok_conflicts(self, package, model):
-        for pkg in model:
-            print(pkg)
-            if pkg > 0:
-                pkg = self.package_ids[pkg]
-                if pkg in self.conflicts[self.package_ids[package]]:
+        if self.conflicts.get(package) is not None:
+            for conflict in self.conflicts[package]:
+                if conflict in model and conflict > 0:
                     return False
         return True
 
