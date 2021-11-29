@@ -1,5 +1,5 @@
 # optimum: ¯\_(ツ)_/¯
-p spu 863
+p spu 862
 n accountsservice
 n adduser
 n apparmor
@@ -482,7 +482,6 @@ n xxd
 n xz-utils
 n zerofree
 n zlib1g
-n snap
 n snap
 n debconf-2.0
 n core-dump-handler

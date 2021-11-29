@@ -9,11 +9,10 @@ import wcnf
 
 
 class SPU(object):
-    def __init__(self, file_path="", solver=None):
+    def __init__(self, solver=None):
         self.packages = {}
         self.package_ids = {}
         self.num_packages = 0
-        self.file_path = file_path
         self.formula = wcnf.WCNFFormula()
         self.solver = solver
 
@@ -21,9 +20,9 @@ class SPU(object):
         self.dependencies = {}
         self.conflicts = {}
 
-    def generate_formula_and_solve(self):
-        if self.file_path:
-            with open(self.file_path, 'r') as stream:
+    def generate_formula_and_solve(self, file_path):
+        if file_path:
+            with open(file_path, 'r') as stream:
                 return self.read_stream(stream)
 
     def read_stream(self, stream):
@@ -48,8 +47,8 @@ class SPU(object):
 
         print(len(self.packages))
         print(self.num_packages)
-        
-        if len(self.packages) != self.num_packages:  # AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA FER UN TEST PER COMPROBAR AIXÒ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+        if len(self.packages) != self.num_packages:
             print("Nombre de paquets incorrecte...")
             sys.exit(1)
 
@@ -75,9 +74,6 @@ class SPU(object):
             self.check_package(dependencies[1])
             new_clause += [self.packages[dependency]]
 
-            # To valdiate
-            # self.dependencies[dependencies[0]] = self.dependencies[dependencies[0]] + [dependency]
-            # self.dependencies[dependencies[0]] += [dependency]
         self.dependencies[dependencies[0]] += [dependencies[1:]]
         dependent = self.packages[dependencies[0]]
         self.formula.add_clause([-dependent] + new_clause, weight=wcnf.TOP_WEIGHT)
@@ -97,7 +93,7 @@ class SPU(object):
             sys.exit(2)
 
     def print_solution(self,
-                       solution):  # AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA ALFABETIC AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                       solution):  # AAAAAAAAAAAAAAAAAAAAAAAAAAAA ALFABETIC AAAAAAAAAAAAAAAAAAAAA
         opt, model = solution
         print("o " + str(opt))
         print("v", end="")
@@ -111,33 +107,14 @@ class SPU(object):
         ok = True
         for package in model:
             if package > 0:
-                if not self.ok_dependencies(package, model) or not self.ok_conflicts(package, model):
+                if not self.ok_dependencies(package, model) or \
+                        not self.ok_conflicts(package, model):
                     ok = False
                     break
         if ok:
             print("c VALIDATION OK")
         else:
             print("c VALIDATION WRONG")
-
-    # AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AQUEST ES ELQ UE FALTE ARREGALR AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-
-    # def ok_dependencies(self, package, model):
-    #     for pkg in model:
-    #         print(pkg)
-    #         if pkg > 0:
-    #             pkg = self.package_ids[pkg]
-    #             if pkg in self.dependencies[self.package_ids[package]]:
-    #                 return True
-    #     return False
-    #
-    # def ok_conflicts(self, package, model):
-    #     for pkg in model:
-    #         print(pkg)
-    #         if pkg > 0:
-    #             pkg = self.package_ids[pkg]
-    #             if pkg in self.conflicts[self.package_ids[package]]:
-    #                 return False
-    #     return True
 
     def ok_dependencies(self, package, model):
         sat_dependencies = 0
@@ -162,8 +139,8 @@ def main(argv=None):
     args = parse_args(argv)
     solver = msat_runner.MaxSATRunner(args.solver)
 
-    spu_problem = SPU(args.problem, solver)
-    solution = spu_problem.generate_formula_and_solve()
+    spu_problem = SPU(solver)
+    solution = spu_problem.generate_formula_and_solve(args.problem)
     spu_problem.print_solution(solution)
     if args.validate:
         spu_problem.check_solution(solution)
@@ -180,7 +157,8 @@ def parse_args(argv=None):
 
     parser.add_argument("problem", help="Path to the problem instance.")
 
-    parser.add_argument("--validate", action="store_true", help="Specify if the user wants to check the solution.")
+    parser.add_argument("--validate", action="store_true",
+                        help="Specify if the user wants to check the solution.")
 
     return parser.parse_args(args=argv)
 
@@ -188,4 +166,4 @@ def parse_args(argv=None):
 if __name__ == '__main__':
     sys.exit(main())
 
-# AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA  passar pylint AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+# AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA  passar pylint AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
