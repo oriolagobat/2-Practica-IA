@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+"""
+This module represents a variety of Graph problemes: min vertex cover, max clique and max cut.
+It reads the problems from a text file that follows a certain structure to input the clauses,
+and converts that input into a formula that a SAT solver is able to understand and solve.
+"""
+
 from __future__ import absolute_import, print_function
 
 import argparse
@@ -16,7 +22,7 @@ import wcnf
 ###############################################################################
 
 
-class Graph(object):
+class Graph:
     """This class represents an undirected graph. The graph nodes are
     labeled 1, ..., n, where n is the number of nodes, and the edges are
     stored as pairs of nodes.
@@ -66,7 +72,6 @@ class Graph(object):
         To install graphviz you can use 'pip install graphviz'.
         Notice that graphviz should also be installed in your system.
         For ubuntu, you can install it using 'sudo apt install graphviz'
-        
         :param name: Name of the generated file, defaults to "graph"
         :type name: str, optional
         :raises ImportError: When unable to import graphviz.
@@ -115,7 +120,7 @@ class Graph(object):
         # Solve formula
         print("MVC", file=sys.stderr)
         print(formula, end="\n\n", file=sys.stderr)
-        opt, model = solver.solve(formula)
+        _, model = solver.solve(formula)
 
         # Translate model
         return [n for n in model if n > 0]
@@ -145,7 +150,7 @@ class Graph(object):
         # Solve formula
         print("MAX_CLIQUE", file=sys.stderr)
         print(formula, end="\n\n", file=sys.stderr)
-        opt, model = solver.solve(formula)
+        _, model = solver.solve(formula)
 
         # Translate model
         return [n for n in model if n > 0]
@@ -173,7 +178,7 @@ class Graph(object):
         # Solve formula
         print("MAX_CUT", file=sys.stderr)
         print(formula, end="\n\n", file=sys.stderr)
-        opt, model = solver.solve(formula)
+        _, model = solver.solve(formula)
 
         # Translate model
         return [n for n in model if n > 0]
@@ -184,6 +189,9 @@ class Graph(object):
 
 
 def main(argv=None):
+    """
+    Executes all the diferent graph problems and shows the result
+    """
     args = parse_command_line_arguments(argv)
 
     solver = msat_runner.MaxSATRunner(args.solver)

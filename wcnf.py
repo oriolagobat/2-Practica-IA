@@ -16,7 +16,7 @@ class WCNFException(Exception):
     """Invalid MaxSAT operation."""
 
 
-class WCNFFormula(object):
+class WCNFFormula:
 
     def __init__(self):
         self.num_vars = 0
@@ -94,7 +94,8 @@ class WCNFFormula(object):
 
         # Soft - For every soft clause in the formula
         for weight, clause in self.soft:
-            # Generate new variable "b", add it as a soft clause and generate the subsequent hard clauses
+            # Generate new variable "b",
+            # add it as a soft clause and generate the subsequent hard clauses
             formula13.new_var()
             formula13.add_clause([-formula13.num_vars], weight)
             # Send hard clauses to the method that translates it to 1,3
