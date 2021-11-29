@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+"""
+This module represents the problem of the software package upgrades,
+in which we have packages to be installed, with dependencies and conflicts in some of them.
+Our objective is to maximize the number of packages installed
+"""
+
 import argparse
 import sys
 
@@ -8,7 +14,12 @@ import msat_runner
 import wcnf
 
 
-class SPU(object):
+class SPU:
+    """
+    This class represents the problem itself,
+    with its important attributes and the functions to solve it
+    """
+
     def __init__(self, solver=None):
         self.packages = {}
         self.package_ids = {}
@@ -21,11 +32,19 @@ class SPU(object):
         self.conflicts = {}
 
     def generate_formula_and_solve(self, file_path):
+        """
+        Checks if the file path passed is correct and opens it to parse it
+        """
         if file_path:
-            with open(file_path, 'r') as stream:
-                return self.read_stream(stream)
+            with open(file_path, 'r', encoding="utf8") as stream:
+                return self.parse_and_solve(stream)
+        raise FileNotFoundError
 
-    def read_stream(self, stream):
+    def parse_and_solve(self, stream):
+        """
+        Discenrns between the different types of input lines (dependencies, conflicts, ...) and
+        manages each o
+        """
         reader = (line for line in (lineline.strip() for lineline in stream) if line)
         for line in reader:
             line = line.split()
@@ -42,12 +61,11 @@ class SPU(object):
             elif line[0] == 'c':
                 self.manage_conflict(line[1:])
 
-            else:  # Si # o qualsvol altra merda
+            else:  # If there's a hashtag or any other invalid character, ignore it
                 pass
 
-        print(len(self.packages))
-        print(self.num_packages)
-
+        # Makes sure that the number of packages told to us in the first line
+        # is the same as the number of packages declared further in the file
         if len(self.packages) != self.num_packages:
             print("Nombre de paquets incorrecte...")
             sys.exit(1)
@@ -57,17 +75,23 @@ class SPU(object):
         return solution
 
     def manage_package(self, package):
+        """
+        Parse the declaration of the packages and add its clauses
+        """
         package_id = len(self.packages) + 1
         self.packages[package] = package_id
         self.package_ids[package_id] = package
-        self.formula.new_var()  # Paquet 1 = variable "1" de la formula, ....
+        self.formula.new_var()  # Package 1 == Var 1 of the formula13
         self.formula.add_clause([self.packages[package]], weight=1)
 
-        # To help validate
+        # To validate
         self.dependencies[package] = []
         self.conflicts[package] = []
 
     def manage_dependency(self, dependencies):
+        """
+        Parse the declaration of the dependencies and add its clauses
+        """
         self.check_package(dependencies[0])
         new_clause = []
         for dependency in dependencies[1:]:
@@ -79,6 +103,9 @@ class SPU(object):
         self.formula.add_clause([-dependent] + new_clause, weight=wcnf.TOP_WEIGHT)
 
     def manage_conflict(self, conflicts):
+        """
+        Parse the declaration of the conflicts and add its clauses
+        """
         self.check_package(conflicts[1])
         conflictable = self.packages[conflicts[0]]
         conflict = self.packages[conflicts[1]]
@@ -88,35 +115,56 @@ class SPU(object):
         self.conflicts[conflicts[0]] = self.conflicts[conflicts[0]] + [conflicts[1]]
 
     def check_package(self, package):
+        """
+        Checks whether a certain package has been delcared
+        """
         if self.packages.get(package) is None:
             print("El paquet no ha estat declarat...")
             sys.exit(2)
 
-    def print_solution(self,
-                       solution):  # AAAAAAAAAAAAAAAAAAAAAAAAAAAA ALFABETIC AAAAAAAAAAAAAAAAAAAAA
+    def print_solution(self, solution):
+        """
+        Prints the packages that connot be installed,
+        by alfabetical order and with a space between them
+        """
+        # Get packages that can't be installed
         opt, model = solution
+        installed_packages = []
         print("o " + str(opt))
         print("v", end="")
         for package in model:
             if package < 0:
-                print(" " + self.package_ids[abs(package)], end="")
+                installed_packages += [self.package_ids[abs(package)]]
+
+        # Sort packages that can't be installed by alfabetical order
+        installed_packages.sort()
+
+        # Print packages
+        for package in installed_packages:
+            print(" " + package, end="")
         print()
 
     def check_solution(self, solution):
+        """
+        Checks the solution if the "--validate" option has been called
+        """
         _, model = solution
-        ok = True
+        correct = True
         for package in model:
             if package > 0:
                 if not self.ok_dependencies(package, model) or \
                         not self.ok_conflicts(package, model):
-                    ok = False
+                    correct = False
                     break
-        if ok:
+        if correct:
             print("c VALIDATION OK")
         else:
             print("c VALIDATION WRONG")
 
     def ok_dependencies(self, package, model):
+        """
+        Checks if the dependencies of the solution are satisfied
+        """
         sat_dependencies = 0
         if self.dependencies.get(package) is None:
             return True
@@ -128,6 +176,9 @@ class SPU(object):
         return sat_dependencies == len(self.dependencies[package])
 
     def ok_conflicts(self, package, model):
+        """
+        Checks if the conflicts of the solution are satisfied
+        """
         if self.conflicts.get(package) is not None:
             for conflict in self.conflicts[package]:
                 if conflict in model and conflict > 0:
@@ -136,6 +187,11 @@ class SPU(object):
 
 
 def main(argv=None):
+    """
+    Craetes an object that represents the problem,
+    then solve it and print it's solution.
+    Also, if the "--validate" option has been called, validate the answer
+    """
     args = parse_args(argv)
     solver = msat_runner.MaxSATRunner(args.solver)
 
@@ -165,5 +221,3 @@ def parse_args(argv=None):
 
 if __name__ == '__main__':
     sys.exit(main())
-
-# AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA  passar pylint AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA

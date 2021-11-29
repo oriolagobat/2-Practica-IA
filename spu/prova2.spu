@@ -1,9 +1,0 @@
-p spu 4
-n pkg1
-n pkg2
-n pkg3
-n pkg4
-d pkg1 pkg2
-d pkg1 pkg3
-c pkg2 pkg4
-c pkg3 pkg4
